@@ -1,0 +1,93 @@
+export const categories = [
+  
+  {
+  title: "Concert",
+  slug: "concert",
+  description: "High-energy live performance photography capturing the essence of music.",
+  coverImage: "/images/concert/20180519072445_IMG_3838.JPG", // Cover Image (First)
+  images: [
+        
+    "/images/concert/20180519083821_IMG_4160.JPG",
+    "/images/concert/20180519084414_IMG_4214.JPG",
+    "/images/concert/20180519085100_IMG_4235.JPG",
+    "/images/concert/20180519085430_IMG_4251.JPG",
+        "/images/concert/20180519074443_IMG_3960.JPG",
+    "/images/concert/20180519074535_IMG_3963.JPG",
+    "/images/concert/20180519080725_IMG_4032.JPG",
+
+
+    "/images/concert/20180519090842_IMG_4263.JPG",
+    "/images/concert/20180519072445_IMG_3838.JPG",
+    "/images/concert/20180519072538_IMG_3851.JPG",
+    ,
+    // "/images/concert/image1.jpg",
+    // "/images/concert/image2.jpg",
+    // "/images/concert/image3.jpg"
+
+  ],
+},
+
+  
+  {
+  title: "Art",
+  slug: "art",
+  description: "Creative and artistic photography exploring visual storytelling.",
+  coverImage: "/images/art/IMG_1403.jpeg",
+  images: [
+    "/images/art/IMG_1403.jpeg",
+    "/images/art/IMG_1705.jpeg",
+    "/images/art/IMG_1849.jpeg",
+    "/images/art/IMG_3998.jpeg",
+    "/images/art/IMG_4106.jpeg",
+    "/images/art/WhatsApp Image 2025-05-26 at 10.29.48 PM.jpeg",
+    "/images/art/WhatsApp Image 2025-05-26 at 10.52.53 PM.jpeg",
+    "/images/art/WhatsApp Image 2025-05-26 at 10.52.54 PM (1).jpeg",
+    "/images/art/WhatsApp Image 2025-05-26 at 10.52.54 PM.jpeg",
+    "/images/art/WhatsApp Image 2025-05-26 at 10.52.55 PM (1).jpeg",
+    "/images/art/WhatsApp Image 2025-05-26 at 10.52.55 PM.jpeg",
+    "/images/art/WhatsApp Image 2025-05-26 at 10.52.56 PM (1).jpeg",
+    "/images/art/WhatsApp Image 2025-05-26 at 10.52.57 PM (2).jpeg",
+     "/images/art/WhatsApp Image 2025-05-26 at 10.52.56 PM.jpeg",
+    "/images/art/WhatsApp Image 2025-05-26 at 10.52.57 PM.jpeg",
+     "/images/art/WhatsApp Image 2025-05-26 at 10.52.59 PM (1).jpeg",
+    "/images/art/WhatsApp Image 2025-05-26 at 10.53.01 PM.jpeg",
+    "/images/art/WhatsApp Image 2025-05-26 at 10.53.02 PM (1).jpeg",
+    "/images/art/WhatsApp Image 2025-05-26 at 10.53.05 PM (2).jpeg",
+    "/images/art/WhatsApp Image 2025-05-26 at 10.53.06 PM (1).jpeg",
+    "/images/art/WhatsApp Image 2025-05-26 at 10.53.06 PM.jpeg",
+    "/images/art/WhatsApp Image 2025-05-26 at 10.53.07 PM (1).jpeg",
+  ],
+},
+  {
+    title: "Portraits",
+    slug: "portraits",
+    description: "Portrait photography capturing personalities and emotions across different sessions.",
+    coverImage: "/images/portraits/Abhishek expression/_MG_9737.JPG",
+    images: [], // This will be handled by the special portraits sessions page
+  },
+  {
+    title: "Automobile",
+    slug: "automobile",
+    description: "Automotive photography showcasing vehicles in their finest form.",
+    coverImage: "/images/Automobile/2G8A0008.jpg",
+    images: [
+      "/images/Automobile/2G8A0067.jpg",
+      "/images/Automobile/2G8A0099.jpg",
+      // Add your Automobile folder images here
+      "/images/Automobile/2G8A0008.jpg",
+      "/images/Automobile/2G8A0011.jpg",
+      "/images/Automobile/2G8A0048.jpg",
+      "/images/Automobile/2G8A0029 (1).jpg",
+      "/images/Automobile/2G8A0021 (1).jpg",
+      "/images/Automobile/2G8A0050 (1).jpg",
+
+    ],
+  },
+  {
+    title: "Commercial Theater",
+    slug: "commercial-theater",
+    description: "Professional theater and commercial photography capturing different productions and events.",
+    coverImage: "/images/commercial theater/Romeo & Juliet/image1.jpg", // Update with actual first image
+    images: [], // This will be handled by the special theater sessions page
+  },
+]
