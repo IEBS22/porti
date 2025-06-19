@@ -119,7 +119,7 @@ export default function CategoryPage({ params }: CategoryPageProps) {
             >
               <div className="relative w-full aspect-[4/3]">
                 <Image
-                  src={image || "/placeholder.svg"}
+                  src={image ? image : "/images/placeholder-logo.jpg"}
                   alt={`${category.title} ${index + 1}`}
                   fill
                   className="object-cover group-hover:scale-105 transition-transform duration-500"

@@ -26,17 +26,17 @@ export const theaterSessions = [
     title: "Something Like Truth",
     slug: "something-like-truth",
     // description: "Spectacular musical production featuring elaborate costumes and breathtaking choreography.",
-    coverImage: "/images/Commercial theater/Something like truth/IMG_9106.JPG", // Update with your actual first image
+    coverImage: "/images/Commercial theater/Something like truth/IMG_9106.jpg", // Update with your actual first image
     folderPath: "Something like truth",
     // venue: "Broadway Theater",
     // date: "February 2024",
     // production: "Musical Theater",
     images: [
-      "/images/Commercial theater/Something like truth/IMG_9106.JPG",
-      "/images/Commercial theater/Something like truth/IMG_9107.JPG",
-      "/images/Commercial theater/Something like truth/IMG_9108.JPG",
-      "/images/Commercial theater/Something like truth/IMG_9109.JPG",
-      "/images/Commercial theater/Something like truth/IMG_9110.JPG"
+      "/images/Commercial theater/Something like truth/IMG_9106.jpg",
+      "/images/Commercial theater/Something like truth/IMG_9107.jpg",
+      "/images/Commercial theater/Something like truth/IMG_9108.jpg",
+      "/images/Commercial theater/Something like truth/IMG_9109.jpg",
+      "/images/Commercial theater/Something like truth/IMG_9110.jpg"
       // Add all images from this production folder
     ],
   },
@@ -128,7 +128,7 @@ export const theaterSessions = [
     // date: "March 2024",
     // production: "Shakespeare Classic",
     images: [
-      "/images/Commercial theater/Kabutar ja ja ja/PSX_20190819_152310-01.jpeg",
+      "/images/Commercial theater/Kabutar ja ja ja/PSX_20190819_152310-01.jpg",
       "/images/Commercial theater/Kabutar ja ja ja/PSX_20190819_152811.jpg",
       "/images/Commercial theater/Kabutar ja ja ja/PSX_20190819_153322.jpg",
       "/images/Commercial theater/Kabutar ja ja ja/PSX_20190819_205641.jpg",

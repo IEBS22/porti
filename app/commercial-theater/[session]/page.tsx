@@ -139,7 +139,7 @@ export default function TheaterSessionPage({ params }: TheaterSessionPageProps) 
             >
               <div className="relative aspect-square">
                 <Image
-                  src={image || "/placeholder.svg"}
+                  src={image ? image : "/images/placeholder-logo.jpg"}
                   alt={`${session.title} ${index + 1}`}
                   fill
                   className="object-cover group-hover:scale-105 transition-transform duration-500"

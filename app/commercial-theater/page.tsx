@@ -33,7 +33,7 @@ export default function CommercialTheaterPage() {
               {/* Production Cover Image */}
               <div className="relative aspect-[4/5]">
                 <Image
-                  src={session.coverImage || "/placeholder.svg"}
+                  src={session.coverImage ? session.coverImage : "/images/placeholder-logo.jpg"}
                   alt={session.title}
                   fill
                   className="object-cover group-hover:scale-105 transition-transform duration-500"
