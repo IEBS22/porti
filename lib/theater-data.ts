@@ -58,7 +58,7 @@ export const theaterSessions = [
       "/images/Commercial theater/Amar photo studio suggestion/IMG_0106.jpg",
       "/images/Commercial theater/Amar photo studio suggestion/IMG_0040.jpg",
       
-      
+      "/images/Commercial theater/Amar photo studio suggestion/_MG_2178.jpg",
       "/images/Commercial theater/Amar photo studio suggestion/IMG_0025.jpg",
       "/images/Commercial theater/Amar photo studio suggestion/IMG_0030.jpg",
       "/images/Commercial theater/Amar photo studio suggestion/IMG_0186.jpg",
