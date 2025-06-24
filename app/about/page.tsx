@@ -24,20 +24,12 @@ export default function AboutPage() {
                   where I first learned how to capture emotion, light and movement in real time. 
                   Over the years I have worked on a various genres like - from treatrical performances to portrairts, art photography, concert shoot, food and product photography. 
                   I consider myself a mid level professional who is constantly evolving and exploring new perspectives. 
-                  My aim is to tell stories that resonate and often inspired by everyday moments that go unnoticed. 
+                  I aim to tell stories that resonate and are often inspired by everyday moments that go unnoticed. 
                 
                 </p>
                 <p>
-                  Based in the heart of the city, I draw inspiration from the urban landscape and the diverse stories of
-                  the people I meet. My approach combines technical precision with artistic vision, always striving to
-                  create images that resonate on an emotional level.
+                  Lets create something together. 
                 </p>
-
-                <p>
-                  When I'm not behind the camera, you can find me exploring new locations, experimenting with different
-                  techniques, or collaborating with other creative professionals to push the boundaries of visual
-                  storytelling. Thank you for stopping by.
-                  </p>
               </div>
 
               {/* <div className="pt-6">
