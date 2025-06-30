@@ -163,8 +163,8 @@ import Image from "next/image"
 import Link from "next/link"
 import { ArrowLeft } from "lucide-react"
 
-import { theaterSessions } from "../../../lib/theater-data"
-import { portraitSessions } from "../../../lib/portrait-data"
+import { theaterSessions } from "@/lib/theater-data"
+import { portraitSessions } from "@/lib/portrait-data"
 
 interface SessionPageProps {
   params: {
@@ -188,7 +188,7 @@ export function generateStaticParams() {
 export default function SessionPage({ params }: SessionPageProps) {
   const { category, session: slug } = params
 
-  // pick the correct list based on the category slug
+  // pick the right data array
   const list =
     category === "commercial-theater"
       ? theaterSessions
@@ -202,47 +202,46 @@ export default function SessionPage({ params }: SessionPageProps) {
   return (
     <div className="min-h-screen bg-neutral-50">
       <div className="container mx-auto px-6 py-12">
-        {/* Back Navigation */}
+        {/* Back Link */}
         <Link
           href={`/${category}`}
-          className="inline-flex items-center space-x-2 text-neutral-600 hover:text-neutral-900 transition-colors mb-8 group"
+          className="inline-flex items-center space-x-2 text-neutral-600 hover:text-neutral-900 mb-8 group"
         >
           <ArrowLeft className="w-4 h-4 group-hover:-translate-x-1 transition-transform" />
-          <span className="text-sm font-light tracking-wide">
+          <span className="text-sm font-light">
             Back to{" "}
             {category === "commercial-theater"
-              ? "Theater Productions"
+              ? "Commercial Theater"
               : "Portraits"}
           </span>
         </Link>
 
-        {/* Session Title & Meta */}
+        {/* Title & Optional Description */}
         <div className="mb-12">
-          <h1 className="text-3xl md:text-4xl font-light tracking-wide text-neutral-900 mb-4">
+          <h1 className="text-3xl md:text-4xl font-light text-neutral-900 mb-4">
             {sess.title}
           </h1>
-          <div className="text-neutral-500 text-sm font-light">
-            {sess.images.length} photos in this{" "}
-            {category === "commercial-theater"
-              ? "production"
-              : "portrait session"}
-          </div>
+          {sess.description && (
+            <p className="text-neutral-600 font-light max-w-2xl">
+              {sess.description}
+            </p>
+          )}
         </div>
 
-        {/* Photo Gallery */}
-        <div className="grid grid-cols-1 md:grid-cols-2 gap-28">
-          {sess.images.map((img, i) => (
+        {/* Images Grid */}
+        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+          {sess.images.map((img, idx) => (
             <div
-              key={i}
+              key={idx}
               className="group relative overflow-hidden rounded-sm shadow-sm hover:shadow-md transition-all duration-300"
             >
-              <div className="relative aspect-square">
+              <div className="relative w-full aspect-[4/3]">
                 <Image
                   src={img}
-                  alt={`${sess.title} ${i + 1}`}
+                  alt={`${sess.title} ${idx + 1}`}
                   fill
                   className="object-cover group-hover:scale-105 transition-transform duration-500"
-                  loading={i < 6 ? "eager" : "lazy"}
+                  loading={idx < 6 ? "eager" : "lazy"}
                   sizes="(max-width: 768px) 100vw, (max-width: 1024px) 50vw, 33vw"
                 />
                 <div className="absolute inset-0 bg-black/0 group-hover:bg-black/10 transition-colors duration-300" />
