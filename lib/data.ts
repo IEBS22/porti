@@ -11,7 +11,7 @@ export const categories = [
     "/images/concert/20180519084414_IMG_4214.jpg",
     "/images/concert/20180519085100_IMG_4235.jpg",
     "/images/concert/20180519085430_IMG_4251.jpg",
-        "/images/concert/20180519074443_IMG_3960.jpg",
+    "/images/concert/20180519074443_IMG_3960.jpg",
     "/images/concert/20180519074535_IMG_3963.jpg",
     "/images/concert/20180519080725_IMG_4032.jpg",
 
