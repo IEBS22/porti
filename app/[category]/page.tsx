@@ -75,9 +75,9 @@ import Image from "next/image"
 import Link from "next/link"
 import { ArrowLeft } from "lucide-react"
 
-import { categories } from "@/lib/data"
-import { theaterSessions } from "@/lib/theater-data"
-import { portraitSessions } from "@/lib/portrait-data"
+import { categories } from "../../lib/data"
+import { theaterSessions } from "../../lib/theater-data"
+import { portraitSessions } from "../../lib/portrait-data"
 
 interface CategoryPageProps {
   params: { category: string }

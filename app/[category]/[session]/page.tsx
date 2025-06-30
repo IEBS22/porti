@@ -163,8 +163,8 @@ import Image from "next/image"
 import Link from "next/link"
 import { ArrowLeft } from "lucide-react"
 
-import { theaterSessions } from "@/lib/theater-data"
-import { portraitSessions } from "@/lib/portrait-data"
+import { theaterSessions } from "../../../lib/theater-data"
+import { portraitSessions } from "../../../lib/portrait-data"
 
 interface SessionPageProps {
   params: {
