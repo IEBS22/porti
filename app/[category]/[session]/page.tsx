@@ -1,170 +1,13 @@
-// import { notFound } from "next/navigation"
-// import Image from "next/image"
-// import Link from "next/link"
-// import { ArrowLeft, MapPin, Calendar, Theater } from "lucide-react"
-// import { theaterSessions } from "@/lib/theater-data"
-
-// interface TheaterSessionPageProps {
-//   params: {
-//     session: string
-//   }
-// }
-
-// export function generateStaticParams() {
-//   return theaterSessions.map((session) => ({
-//     session: session.slug,
-//   }))
-// }
-
-// export default function TheaterSessionPage({ params }: TheaterSessionPageProps) {
-//   const session = theaterSessions.find((s) => s.slug === params.session)
-
-//   if (!session) {
-//     notFound()
-//   }
-
-//   return (
-//     <div className="min-h-screen bg-neutral-50">
-//       <div className="container mx-auto px-6 py-12">
-//         {/* Back Navigation */}
-//         <Link
-//           href="/commercial-theater"
-//           className="inline-flex items-center space-x-2 text-neutral-600 hover:text-neutral-900 transition-colors mb-8 group"
-//         >
-//           <ArrowLeft className="w-4 h-4 group-hover:-translate-x-1 transition-transform" />
-//           <span className="text-sm font-light tracking-wide">Back to Theater Productions</span>
-//         </Link>
-
-//         {/* Production Title */}
-//         <div className="mb-12">
-//           <h1 className="text-3xl md:text-4xl font-light tracking-wide text-neutral-900 mb-4">{session.title}</h1>
-//           {/* <p className="text-neutral-600 font-light max-w-2xl mb-4">{session.description}</p> */}
-
-//           {/* Production Details */}
-//           <div className="flex flex-wrap items-center gap-6 text-neutral-500 text-sm font-light">
-//             {/* <div className="flex items-center space-x-2">
-//               <Theater className="w-4 h-4" />
-//               <span>{session.production}</span>
-//             </div> */}
-//             {/* <div className="flex items-center space-x-2">
-//               <MapPin className="w-4 h-4" />
-//               <span>{session.venue}</span> */}
-//             </div>
-//             {/* <div className="flex items-center space-x-2">
-//               <Calendar className="w-4 h-4" />
-//               <span>{session.date}</span>
-//             </div> */}
-//             <div>{session.images.length} photos in this production</div>
-//           </div>
-//         </div>
-
-//         {/* Photo Gallery */}
-//         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-12 md:gap-16">
-//           {session.images.map((image, index) => (
-//             <div
-//               key={index}
-//               className="group relative overflow-hidden rounded-sm shadow-sm hover:shadow-md transition-all duration-300"
-//             >
-//               <div className="relative aspect-square">
-//                 <Image
-//                   src={image || "/placeholder.svg"}
-//                   alt={`${session.title} ${index + 1}`}
-//                   fill
-//                   className="object-cover group-hover:scale-105 transition-transform duration-500"
-//                   loading={index < 6 ? "eager" : "lazy"}
-//                 />
-//                 <div className="absolute inset-0 bg-black/0 group-hover:bg-black/10 transition-colors duration-300" />
-//               </div>
-//             </div>
-//           ))}
-//         </div>
-//       </div>
-
-//   )
-// }
-
-// import { notFound } from "next/navigation"
-// import Image from "next/image"
-// import Link from "next/link"
-// import { ArrowLeft } from "lucide-react"
-// import { theaterSessions } from "../../../lib/theater-data"
-
-// interface TheaterSessionPageProps {
-//   params: {
-//     session: string
-//   }
-// }
-
-// export function generateStaticParams() {
-//   return theaterSessions.map((session) => ({
-//     session: session.slug,
-//   }))
-// }
-
-// export default function TheaterSessionPage({ params }: TheaterSessionPageProps) {
-//   const session = theaterSessions.find((s) => s.slug === params.session)
-
-//   if (!session) {
-//     notFound()
-//   }
-
-//   return (
-//     <div className="min-h-screen bg-neutral-50">
-//       <div className="container mx-auto px-6 py-12">
-//         {/* Back Navigation */}
-//         <Link
-//           href="/commercial-theater"
-//           className="inline-flex items-center space-x-2 text-neutral-600 hover:text-neutral-900 transition-colors mb-8 group"
-//         >
-//           <ArrowLeft className="w-4 h-4 group-hover:-translate-x-1 transition-transform" />
-//           <span className="text-sm font-light tracking-wide">Back to Theater Productions</span>
-//         </Link>
-
-//         {/* Production Title */}
-//         <div className="mb-12">
-//           <h1 className="text-3xl md:text-4xl font-light tracking-wide text-neutral-900 mb-4">{session.title}</h1>
-
-//           {/* Production Details */}
-//           <div className="flex flex-wrap items-center gap-6 text-neutral-500 text-sm font-light">
-//             <div>{session.images.length} photos in this production</div>
-//           </div>
-//         </div>
-
-//         {/* Photo Gallery */}
-//         <div className="grid grid-cols-1 grid-cols-2  gap-28">
-//           {session.images.map((image, index) => (
-//             <div
-//               key={index}
-//               className="group relative overflow-hidden rounded-sm shadow-sm hover:shadow-md transition-all duration-300"
-//             >
-//               <div className="relative aspect-square">
-//                 <Image
-//                   src={image ? image : "/images/placeholder-logo.jpg"}
-//                   alt={`${session.title} ${index + 1}`}
-//                   fill
-//                   className="object-cover group-hover:scale-105 transition-transform duration-500"
-//                   loading={index < 6 ? "eager" : "lazy"}
-//                   sizes="(max-width: 768px) 100vw, (max-width: 1024px) 50vw, 33vw"
-//                 />
-//                 <div className="absolute inset-0 bg-black/0 group-hover:bg-black/10 transition-colors duration-300" />
-//               </div>
-//             </div>
-//           ))}
-//         </div>
-//       </div>
-//     </div>
-//   )
-// }
-
-// app/[category]/[session]/page.tsx
-
 import { notFound } from "next/navigation"
-import Image from "next/image"
 import Link from "next/link"
 import { ArrowLeft } from "lucide-react"
 
 import { theaterSessions } from "../../../lib/theater-data"
 import { portraitSessions } from "../../../lib/portrait-data"
+import { getGridConfig, getGridClasses } from "../../../lib/grid-config"
+import { LazyImage } from "../../../components/lazy-image"
+import { SingleImageLayout } from "../../../components/single-image-layout"
+import { MasonryImage } from "../../../components/masonry-image"
 
 interface SessionPageProps {
   params: {
@@ -188,16 +31,15 @@ export function generateStaticParams() {
 export default function SessionPage({ params }: SessionPageProps) {
   const { category, session: slug } = params
 
-  // pick the right data array
-  const list =
-    category === "commercial-theater"
-      ? theaterSessions
-      : category === "portraits"
-      ? portraitSessions
-      : []
+  // Pick the right data array
+  const list = category === "commercial-theater" ? theaterSessions : category === "portraits" ? portraitSessions : []
 
   const sess = list.find((s) => s.slug === slug)
   if (!sess) return notFound()
+
+  // Get grid configuration for this session
+  const gridConfig = getGridConfig(category, slug)
+  const gridClasses = getGridClasses(gridConfig.columns)
 
   return (
     <div className="min-h-screen bg-neutral-50">
@@ -209,45 +51,60 @@ export default function SessionPage({ params }: SessionPageProps) {
         >
           <ArrowLeft className="w-4 h-4 group-hover:-translate-x-1 transition-transform" />
           <span className="text-sm font-light">
-            Back to{" "}
-            {category === "commercial-theater"
-              ? "Commercial Theater"
-              : "Portraits"}
+            Back to {category === "commercial-theater" ? "Commercial Theater" : "Portraits"}
           </span>
         </Link>
 
         {/* Title & Optional Description */}
         <div className="mb-12">
-          <h1 className="text-3xl md:text-4xl font-light text-neutral-900 mb-4">
-            {sess.title}
-          </h1>
-          {sess.description && (
-            <p className="text-neutral-600 font-light max-w-2xl">
-              {sess.description}
-            </p>
-          )}
+          <h1 className="text-3xl md:text-4xl font-light text-neutral-900 mb-4">{sess.title}</h1>
+          {sess.description && <p className="text-neutral-600 font-light max-w-2xl mb-4">{sess.description}</p>}
+
+          {/* Grid info */}
+          <div className="flex flex-wrap items-center gap-6 text-neutral-500 text-sm font-light">
+            <div>{sess.images.length} photos in this collection</div>
+            <div>Grid: {gridConfig.columns} columns</div>
+          </div>
         </div>
 
-        {/* Images Grid */}
-        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
-          {sess.images.map((img, idx) => (
-            <div
-              key={idx}
-              className="group relative overflow-hidden rounded-sm shadow-sm hover:shadow-md transition-all duration-300"
-            >
-              <div className="relative w-full aspect-[4/3]">
-                <Image
-                  src={img}
-                  alt={`${sess.title} ${idx + 1}`}
-                  fill
-                  className="object-cover group-hover:scale-105 transition-transform duration-500"
-                  loading={idx < 6 ? "eager" : "lazy"}
-                  sizes="(max-width: 768px) 100vw, (max-width: 1024px) 50vw, 33vw"
-                />
-                <div className="absolute inset-0 bg-black/0 group-hover:bg-black/10 transition-colors duration-300" />
-              </div>
-            </div>
-          ))}
+        {/* Dynamic Images Grid */}
+        {gridConfig.columns === 1 ? (
+          <SingleImageLayout images={sess.images} title={sess.title} aspectRatio={gridConfig.aspectRatio} />
+        ) : gridConfig.layout === "masonry" ? (
+          <div className={`${getGridClasses(gridConfig.columns, "masonry")} gap-6 md:gap-8`}>
+            {sess.images.map((img, idx) => (
+              <MasonryImage
+                key={idx}
+                src={img}
+                alt={`${sess.title} ${idx + 1}`}
+                priority={idx < gridConfig.columns * 2}
+                className="mb-6 md:mb-8 break-inside-avoid"
+              />
+            ))}
+          </div>
+        ) : (
+          <div className={`grid ${getGridClasses(gridConfig.columns, "fixed")} gap-6 md:gap-8`}>
+            {sess.images.map((img, idx) => (
+              <LazyImage
+                key={idx}
+                src={img}
+                alt={`${sess.title} ${idx + 1}`}
+                aspectRatio={gridConfig.aspectRatio}
+                priority={idx < gridConfig.columns * 2}
+              />
+            ))}
+          </div>
+        )}
+
+        {/* Grid configuration display for debugging */}
+        <div className="mt-12 p-4 bg-neutral-100 rounded-lg text-sm text-neutral-600">
+          {/* <p>
+            <strong>Current Configuration:</strong>
+          </p> */}
+          {/* <p>Session: {slug}</p>
+          <p>Columns: {gridConfig.columns}</p>
+          <p>Layout: {gridConfig.layout}</p>
+          <p>Aspect Ratio: {gridConfig.aspectRatio}</p> */}
         </div>
       </div>
     </div>

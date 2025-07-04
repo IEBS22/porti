@@ -33,8 +33,9 @@ export const theaterSessions = [
     // production: "Musical Theater",
     images: [
       "/images/Commercial theater/Something like truth/IMG_9106.jpg",
-      "/images/Commercial theater/Something like truth/IMG_9107.jpg",
       "/images/Commercial theater/Something like truth/IMG_9108.jpg",
+      "/images/Commercial theater/Something like truth/IMG_9107.jpg",
+      
       "/images/Commercial theater/Something like truth/IMG_9109.jpg",
       "/images/Commercial theater/Something like truth/IMG_9110.jpg"
       // Add all images from this production folder
@@ -45,7 +46,7 @@ export const theaterSessions = [
     title: "Amar Photo Studio Suggestion",
     slug: "amar_photo_studio_Suggestion",
     // description: "Contemporary dance performance showcasing fluid movements and artistic expression.",
-    coverImage: "/images/Commercial theater/Amar photo studio suggestion/IMG_0030.jpg", // Update with your actual first image
+    coverImage: "/images/Commercial theater/Amar photo studio suggestion/_MG_2200.jpg", // Update with your actual first image
     folderPath: "Amar photo studio suggestion",
     // venue: "Arts Center",
     // date: "December 2023",
@@ -59,7 +60,8 @@ export const theaterSessions = [
       "/images/Commercial theater/Amar photo studio suggestion/IMG_0040.jpg",
       
       "/images/Commercial theater/Amar photo studio suggestion/_MG_2178.jpg",
-      "/images/Commercial theater/Amar photo studio suggestion/IMG_0025.jpg",
+      "/images/Commercial theater/Amar photo studio suggestion/IMG_0346.jpg",
+      
       "/images/Commercial theater/Amar photo studio suggestion/IMG_0030.jpg",
       "/images/Commercial theater/Amar photo studio suggestion/IMG_0186.jpg",
       
@@ -68,7 +70,8 @@ export const theaterSessions = [
       "/images/Commercial theater/Amar photo studio suggestion/IMG_0081.jpg",
       // "/images/Commercial theater/Amar photo studio suggestion/IMG_0113.jpg",
       "/images/Commercial theater/Amar photo studio suggestion/IMG_0149.jpg",
-      "/images/Commercial theater/Amar photo studio suggestion/IMG_0346.jpg",
+      "/images/Commercial theater/Amar photo studio suggestion/IMG_0025.jpg",
+
 
       // Add all images from this performance folder
     ],
@@ -77,7 +80,7 @@ export const theaterSessions = [
     title: "Bhumika",
     slug: "bhumika",
     // description: "Contemporary dance performance showcasing fluid movements and artistic expression.",
-    coverImage: "/images/Commercial theater/Bhumika/IMG_7130.jpg", // Update with your actual first image
+    coverImage:             "/images/Commercial theater/Bhumika/IMG_7301.jpg", // Update with your actual first image
     folderPath: "Bhumika",
     // venue: "Arts Center",
     // date: "December 2023",
@@ -88,12 +91,13 @@ export const theaterSessions = [
       "/images/Commercial theater/Bhumika/IMG_7259.jpg",
             "/images/Commercial theater/Bhumika/IMG_7301.jpg",
                   // "/images/Commercial theater/Bhumika/IMG_7315.jpg",
-                  "/images/Commercial theater/Bhumika/IMG_7168.jpg",
+                        "/images/Commercial theater/Bhumika/IMG_7334.jpg",
+                  
       "/images/Commercial theater/Bhumika/IMG_7197.jpg",
       "/images/Commercial theater/Bhumika/IMG_7209.jpg",
       "/images/Commercial theater/Bhumika/IMG_7249.jpg",
+                  "/images/Commercial theater/Bhumika/IMG_7168.jpg",
       
-                        "/images/Commercial theater/Bhumika/IMG_7334.jpg",
       // Add all images from this performance folder
     ],
   },
@@ -111,9 +115,11 @@ export const theaterSessions = [
       "/images/Commercial theater/Tu mhanshil tasa/_MG_6071.jpg",
 
       "/images/Commercial theater/Tu mhanshil tasa/_MG_5951.jpg",
-      "/images/Commercial theater/Tu mhanshil tasa/_MG_5980.jpg",
-      "/images/Commercial theater/Tu mhanshil tasa/_MG_5993.jpg",
       "/images/Commercial theater/Tu mhanshil tasa/_MG_6159.jpg",
+      
+      "/images/Commercial theater/Tu mhanshil tasa/_MG_5993.jpg",
+      "/images/Commercial theater/Tu mhanshil tasa/_MG_5980.jpg",
+      
       "/images/Commercial theater/Tu mhanshil tasa/_MG_6256.jpg"
       // Add all images from this performance folder
     ],
@@ -128,13 +134,14 @@ export const theaterSessions = [
     // date: "March 2024",
     // production: "Shakespeare Classic",
     images: [
-      "/images/Commercial theater/Kabutar ja ja ja/PSX_20190819_152310-01.jpg",
+      // "/images/Commercial theater/Kabutar ja ja ja/PSX_20190819_152310-01.jpg",
       "/images/Commercial theater/Kabutar ja ja ja/PSX_20190819_152811.jpg",
-      "/images/Commercial theater/Kabutar ja ja ja/PSX_20190819_153322.jpg",
+      "/images/Commercial theater/Kabutar ja ja ja/PSX_20190819_221835.jpg",
+      
+      // "/images/Commercial theater/Kabutar ja ja ja/PSX_20190819_153322.jpg",
       "/images/Commercial theater/Kabutar ja ja ja/PSX_20190819_205641.jpg",
       "/images/Commercial theater/Kabutar ja ja ja/PSX_20190819_213432.jpg",
       // "/images/Commercial theater/Kabutar ja ja ja/PSX_20190819_214711.jpg",
-      "/images/Commercial theater/Kabutar ja ja ja/PSX_20190819_221835.jpg"
       // Add all images from this production folder
     ],
   },
@@ -152,13 +159,14 @@ export const theaterSessions = [
     // production: "Dance Theater",
     images: [
       // "/images/Commercial theater/Bombay/IMG_7788.jpg",
-      "/images/Commercial theater/Bombay/IMG_7660.jpg",
-      "/images/Commercial theater/Bombay/IMG_7788.jpg",
-            "/images/Commercial theater/Bombay/IMG_7758.jpg",
       
       "/images/Commercial theater/Bombay/IMG_7679.jpg",
+      "/images/Commercial theater/Bombay/IMG_7660.jpg",
 
       "/images/Commercial theater/Bombay/IMG_7749.jpg",
+      "/images/Commercial theater/Bombay/IMG_7788.jpg",
+            "/images/Commercial theater/Bombay/IMG_7758.jpg",
+
       // "/images/Commercial theater/Bhumika/_MG_6256.jpg"
       // Add all images from this performance folder
     ],

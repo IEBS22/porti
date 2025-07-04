@@ -23,7 +23,22 @@ export const portraitSessions = [
       "/images/Potraits/Abhishek_expression/_MG_9752.jpg",
     ],
   },
-    {
+
+
+  {
+    title: "Model Session",
+    slug: "model-session",
+    description: "Professional model photography showcasing versatility and style.",
+    coverImage: "/images/Potraits/Model/Cover photo.jpg",
+    folderPath: "Model",
+    images: [
+      "/images/Potraits/Model/Cover photo.jpg",
+            "/images/Potraits/Model/_MG_8752.jpg",
+      // "/images/Potraits/Model/_MG_8735.jpg",
+      "/images/Potraits/Model/_MG_8739.jpg",
+    ],
+  },
+      {
     title: "Ranga",
     slug: "ranga",
     description: "Portrait session with Ranga.",
@@ -37,32 +52,19 @@ export const portraitSessions = [
   },
 
   {
-    title: "Model Session",
-    slug: "model-session",
-    description: "Professional model photography showcasing versatility and style.",
-    coverImage: "/images/Potraits/Model/Cover photo.jpg",
-    folderPath: "Model",
+    title: "Rahul Kulkarni",
+    slug: "rahul-kulkarni",
+    description: "Portrait session with Rahul Kulkarni.",
+    coverImage: "/images/Potraits/Rahul Kulkarni/Cover photo (1).jpg",
+    folderPath: "Rahul Kulkarni",
     images: [
-      "/images/Potraits/Model/Cover photo.jpg",
-      // "/images/Potraits/Model/_MG_8735.jpg",
-      "/images/Potraits/Model/_MG_8739.jpg",
-      "/images/Potraits/Model/_MG_8752.jpg",
-    ],
-  },
-
-  // {
-  //   title: "Rahul Kulkarni",
-  //   slug: "rahul-kulkarni",
-  //   description: "Portrait session with Rahul Kulkarni.",
-  //   coverImage: "/images/Potraits/Rahul Kulkarni/IMG_4127.CR2",
-  //   folderPath: "Rahul Kulkarni",
-  //   images: [
-  //     "/images/Potraits/Rahul Kulkarni/IMG_4127.CR2",
-  //     "/images/Potraits/Rahul Kulkarni/IMG_4131.CR2",
+      "/images/Potraits/Rahul Kulkarni/IMG_4127 (1).jpg",
+      "/images/Potraits/Rahul Kulkarni/IMG_4131 (1),jpg",
+      "/images/Potraits/Rahul Kulkarni/Cover photo (1).jpg",
   //     "/images/Potraits/Rahul Kulkarni/IMG_4144.CR2",
   //     "/images/Potraits/Rahul Kulkarni/IMG_4154.CR2",
-  //   ],
-  // },
+    ],
+  },
   {
     title: "Shaila",
     slug: "shaila",
