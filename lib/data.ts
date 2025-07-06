@@ -1,5 +1,18 @@
 export const categories = [
-  
+    {
+    title: "Portraits",
+    slug: "portraits",
+    description: "Portrait photography capturing personalities and emotions across different sessions.",
+    coverImage: "/images/portraits/Abhishek expression/_MG_9737.jpg",
+    images: [], // This will be handled by the special portraits sessions page
+  },
+    {
+    title: "Commercial Theater",
+    slug: "commercial-theater",
+    description: "Professional theater and commercial photography capturing different productions and events.",
+    coverImage: "/images/commercial theater/Romeo & Juliet/image1.jpg", // Update with actual first image
+    images: [], // This will be handled by the special theater sessions page
+  },
   {
   title: "Concert",
   slug: "concert",
@@ -29,7 +42,28 @@ export const categories = [
 },
 
   
+
   {
+    title: "Automobile",
+    slug: "automobile",
+    description: "Automotive photography showcasing vehicles in their finest form.",
+    coverImage: "/images/Automobile/2G8A0008.jpg",
+    images: [
+      "/images/Automobile/2G8A0067.jpg",
+      // Add your Automobile folder images here
+      "/images/Automobile/2G8A0008.jpg",
+      "/images/Automobile/2G8A0099.jpg",
+
+      "/images/Automobile/2G8A0011.jpg",
+      "/images/Automobile/2G8A0048.jpg",
+      "/images/Automobile/2G8A0029 (1).jpg",
+      "/images/Automobile/2G8A0021 (1).jpg",
+      "/images/Automobile/2G8A0050 (1).jpg",
+
+    ],
+  },
+
+    {
   title: "Art",
   slug: "art",
   description: "Creative and Artistic photography exploring visual storytelling.",
@@ -63,37 +97,5 @@ export const categories = [
 
   ],
 },
-  {
-    title: "Portraits",
-    slug: "portraits",
-    description: "Portrait photography capturing personalities and emotions across different sessions.",
-    coverImage: "/images/portraits/Abhishek expression/_MG_9737.jpg",
-    images: [], // This will be handled by the special portraits sessions page
-  },
-  {
-    title: "Automobile",
-    slug: "automobile",
-    description: "Automotive photography showcasing vehicles in their finest form.",
-    coverImage: "/images/Automobile/2G8A0008.jpg",
-    images: [
-      "/images/Automobile/2G8A0067.jpg",
-      // Add your Automobile folder images here
-      "/images/Automobile/2G8A0008.jpg",
-      "/images/Automobile/2G8A0099.jpg",
 
-      "/images/Automobile/2G8A0011.jpg",
-      "/images/Automobile/2G8A0048.jpg",
-      "/images/Automobile/2G8A0029 (1).jpg",
-      "/images/Automobile/2G8A0021 (1).jpg",
-      "/images/Automobile/2G8A0050 (1).jpg",
-
-    ],
-  },
-  {
-    title: "Commercial Theater",
-    slug: "commercial-theater",
-    description: "Professional theater and commercial photography capturing different productions and events.",
-    coverImage: "/images/commercial theater/Romeo & Juliet/image1.jpg", // Update with actual first image
-    images: [], // This will be handled by the special theater sessions page
-  },
 ]
