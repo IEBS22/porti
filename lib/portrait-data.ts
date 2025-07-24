@@ -1,6 +1,6 @@
 export const portraitSessions = [
   {
-    title: "Abhishek Expression",
+    title: "Notion / खयाल",
     slug: "abhishek_expression",
     description: "Expressive portrait session capturing dynamic emotions and personality.",
     coverImage: "/images/Potraits/Abhishek_expression/_MG_9737.jpg",
@@ -26,7 +26,7 @@ export const portraitSessions = [
 
 
   {
-    title: "Model Session",
+    title: "Glam / आभा ",
     slug: "model-session",
     description: "Professional model photography showcasing versatility and style.",
     coverImage: "/images/Potraits/Model/Cover photo.jpg",
@@ -39,7 +39,7 @@ export const portraitSessions = [
     ],
   },
       {
-    title: "Ranga",
+    title: "Unscripted / अकतीथ ",
     slug: "ranga",
     description: "Portrait session with Ranga.",
     coverImage: "/images/Potraits/Ranga/IMG_2025 (1).jpg",
@@ -52,7 +52,7 @@ export const portraitSessions = [
   },
 
   {
-    title: "Rahul Kulkarni",
+    title: "Raw and Real",
     slug: "rahul-kulkarni",
     description: "Portrait session with Rahul Kulkarni.",
     coverImage: "/images/Potraits/Rahul Kulkarni/Cover photo (1).jpg",
@@ -66,7 +66,7 @@ export const portraitSessions = [
     ],
   },
   {
-    title: "Shaila",
+    title: "Stiullness / ठहर ",
     slug: "shaila",
     description: "Portrait session with Shaila.",
     coverImage: "/images/Potraits/Shaila/_MG_0406.jpg",
@@ -80,7 +80,7 @@ export const portraitSessions = [
   },
 
   {
-    title: "Vaibhav",
+    title: "Ease / स्वाभाविकता",
     slug: "vaibhav",
     description: "Portrait session with Vaibhav.",
     coverImage: "/images/Potraits/Vaibhav/_MG_7926.jpg",
@@ -91,7 +91,7 @@ export const portraitSessions = [
     ],
   },
       {
-    title: "Abhishek Classic",
+    title: "Gaze / अलोकिक",
     slug: "abhishek-classic",
     description: "Classic portrait session with timeless styling and composition.",
     coverImage: "/images/Potraits/Abhishek old/Cover photo.jpg",

@@ -33,7 +33,7 @@ export const categories = [
     "/images/concert/20180519090842_IMG_4263.jpg",
     "/images/concert/20180519072445_IMG_3838.jpg",
     "/images/concert/20180519072538_IMG_3851.jpg",
-    ,
+  
     // "/images/concert/image1.jpg",
     // "/images/concert/image2.jpg",
     // "/images/concert/image3.jpg"
