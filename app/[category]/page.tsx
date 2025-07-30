@@ -8,6 +8,7 @@ import { theaterSessions } from "../../lib/theater-data"
 import { portraitSessions } from "../../lib/portrait-data"
 import { getGridConfig, getGridClasses } from "../../lib/grid-config"
 import { LazyImage } from "../../components/lazy-image"
+import { OptimizedImage } from "../../components/optimized-image"
 
 interface CategoryPageProps {
   params: { category: string }
@@ -76,12 +77,13 @@ export default function CategoryPage({ params }: CategoryPageProps) {
         ) : (
           <div className={`grid ${gridClasses} gap-6 md:gap-8`}>
             {cat.images.map((img, i) => (
-              <LazyImage
+              <OptimizedImage
                 key={i}
                 src={img}
                 alt={`${cat.title} ${i + 1}`}
                 aspectRatio={gridConfig.aspectRatio}
                 priority={i < gridConfig.columns * 2} // Load first 2 rows eagerly
+                fallbackSrc="/images/placeholder-logo.jpg"
               />
             ))}
           </div>
