@@ -2,6 +2,7 @@
 
 import { useState, useRef, useEffect } from "react"
 import Image from "next/image"
+import { validateImagePath } from "@/lib/image-utils"
 
 interface LazyImageProps {
   src: string
@@ -14,6 +15,7 @@ interface LazyImageProps {
 export function LazyImage({ src, alt, aspectRatio, priority = false, className = "" }: LazyImageProps) {
   const [isLoaded, setIsLoaded] = useState(false)
   const [isInView, setIsInView] = useState(false)
+  const [hasError, setHasError] = useState(false)
   const imgRef = useRef<HTMLDivElement>(null)
 
   useEffect(() => {
@@ -54,7 +56,7 @@ export function LazyImage({ src, alt, aspectRatio, priority = false, className =
         )}
 
         {/* Image */}
-        {isInView && (
+        {isInView && !hasError && validateImagePath(src) && (
           <Image
             src={src || "/images/placeholder-logo.jpg"}
             alt={alt}
@@ -65,6 +67,12 @@ export function LazyImage({ src, alt, aspectRatio, priority = false, className =
             loading={priority ? "eager" : "lazy"}
             sizes="(max-width: 640px) 100vw, (max-width: 768px) 50vw, (max-width: 1024px) 33vw, (max-width: 1280px) 25vw, (max-width: 1536px) 20vw, 16vw"
             onLoad={() => setIsLoaded(true)}
+            onError={() => {
+              setHasError(true)
+              console.error(`Failed to load image: ${src}`)
+            }}
+            unoptimized={false}
+            quality={85}
           />
         )}
 
@@ -75,9 +83,23 @@ export function LazyImage({ src, alt, aspectRatio, priority = false, className =
         <div className="absolute inset-0 bg-black/0 group-hover:bg-black/10 transition-colors duration-300" />
 
         {/* Loading indicator */}
-        {isInView && !isLoaded && (
+        {isInView && !isLoaded && !hasError && (
           <div className="absolute inset-0 flex items-center justify-center">
             <div className="w-8 h-8 border-2 border-neutral-300 border-t-neutral-600 rounded-full animate-spin" />
+          </div>
+        )}
+
+        {/* Error state */}
+        {hasError && (
+          <div className="absolute inset-0 flex items-center justify-center bg-neutral-100">
+            <div className="text-center text-neutral-500">
+              <div className="w-12 h-12 mx-auto mb-2 bg-neutral-200 rounded-full flex items-center justify-center">
+                <svg className="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                  <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M4 16l4.586-4.586a2 2 0 012.828 0L16 16m-2-2l1.586-1.586a2 2 0 012.828 0L20 14m-6-6h.01M6 20h12a2 2 0 002-2V6a2 2 0 00-2-2H6a2 2 0 00-2 2v12a2 2 0 002 2z" />
+                </svg>
+              </div>
+              <p className="text-sm">Image unavailable</p>
+            </div>
           </div>
         )}
       </div>

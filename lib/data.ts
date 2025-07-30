@@ -20,24 +20,15 @@ export const categories = [
   coverImage: "/images/concert/20180519072445_IMG_3838.jpg", // Cover Image (First)
   images: [
     "/images/concert/20180519085430_IMG_4251.jpg",
-    
     "/images/concert/20180519084414_IMG_4214.jpg",
     "/images/concert/20180519083821_IMG_4160.jpg",
     "/images/concert/20180519085100_IMG_4235.jpg",
-    
     "/images/concert/20180519074443_IMG_3960.jpg",
     "/images/concert/20180519074535_IMG_3963.jpg",
     "/images/concert/20180519080725_IMG_4032.jpg",
-
-
     "/images/concert/20180519090842_IMG_4263.jpg",
     "/images/concert/20180519072445_IMG_3838.jpg",
     "/images/concert/20180519072538_IMG_3851.jpg",
-  
-    // "/images/concert/image1.jpg",
-    // "/images/concert/image2.jpg",
-    // "/images/concert/image3.jpg"
-
   ],
 },
 
