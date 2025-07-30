@@ -4,6 +4,7 @@ import type React from "react"
 
 import { useState, useRef, useEffect } from "react"
 import Image from "next/image"
+import { addCacheBuster } from "../lib/image-utils"
 
 interface MasonryImageProps {
   src: string
@@ -71,7 +72,7 @@ export function MasonryImage({ src, alt, priority = false, className = "" }: Mas
           {/* Image */}
           {isInView && (
             <Image
-              src={src || "/images/placeholder-logo.jpg"}
+              src={addCacheBuster(src || "/images/placeholder-logo.jpg")}
               alt={alt}
               fill
               className={`object-cover group-hover:scale-105 transition-transform duration-500 ${
@@ -99,7 +100,7 @@ export function MasonryImage({ src, alt, priority = false, className = "" }: Mas
       {!imageDimensions && isInView && (
         <div className="relative w-full aspect-[4/3]">
           <Image
-            src={src || "/images/placeholder-logo.jpg"}
+            src={addCacheBuster(src || "/images/placeholder-logo.jpg")}
             alt={alt}
             fill
             className="object-contain opacity-0"

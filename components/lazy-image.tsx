@@ -2,6 +2,7 @@
 
 import { useState, useRef, useEffect } from "react"
 import Image from "next/image"
+import { addCacheBuster } from "../lib/image-utils"
 
 interface LazyImageProps {
   src: string
@@ -56,7 +57,7 @@ export function LazyImage({ src, alt, aspectRatio, priority = false, className =
         {/* Image */}
         {isInView && (
           <Image
-            src={src || "/images/placeholder-logo.jpg"}
+            src={addCacheBuster(src || "/images/placeholder-logo.jpg")}
             alt={alt}
             fill
             className={`object-contain group-hover:scale-105 transition-transform duration-500 ${
