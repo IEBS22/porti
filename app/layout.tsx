@@ -4,6 +4,7 @@ import { Inter } from "next/font/google"
 import "./globals.css"
 import { Header } from "@/components/header"
 import { Footer } from "@/components/footer"
+import { ThemeProvider } from "@/components/theme-provider"
 
 const inter = Inter({
   subsets: ["latin"],
@@ -25,11 +26,18 @@ export default function RootLayout({
   children: React.ReactNode
 }) {
   return (
-    <html lang="en" className={inter.variable}>
-      <body className="font-sans antialiased bg-neutral-50 text-neutral-800">
-        <Header />
-        {children}
-        <Footer />
+    <html lang="en" className={inter.variable} suppressHydrationWarning>
+      <body className="font-sans antialiased bg-background text-foreground">
+        <ThemeProvider
+          attribute="class"
+          defaultTheme="system"
+          enableSystem
+          disableTransitionOnChange
+        >
+          <Header />
+          {children}
+          <Footer />
+        </ThemeProvider>
       </body>
     </html>
   )

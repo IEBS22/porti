@@ -42,12 +42,12 @@ export default function SessionPage({ params }: SessionPageProps) {
   const gridClasses = getGridClasses(gridConfig.columns)
 
   return (
-    <div className="min-h-screen bg-neutral-50">
+    <div className="min-h-screen bg-background">
       <div className="container mx-auto px-6 py-12">
         {/* Back Link */}
         <Link
           href={`/${category}`}
-          className="inline-flex items-center space-x-2 text-neutral-600 hover:text-neutral-900 mb-8 group"
+          className="inline-flex items-center space-x-2 text-muted-foreground hover:text-foreground mb-8 group"
         >
           <ArrowLeft className="w-4 h-4 group-hover:-translate-x-1 transition-transform" />
           <span className="text-sm font-light">
@@ -57,11 +57,11 @@ export default function SessionPage({ params }: SessionPageProps) {
 
         {/* Title & Optional Description */}
         <div className="mb-12">
-          <h1 className="text-3xl md:text-4xl font-light text-neutral-900 mb-4">{sess.title}</h1>
-          {sess.description && <p className="text-neutral-600 font-light max-w-2xl mb-4">{sess.description}</p>}
+          <h1 className="text-3xl md:text-4xl font-light text-foreground mb-4">{sess.title}</h1>
+          {sess.description && <p className="text-muted-foreground font-light max-w-2xl mb-4">{sess.description}</p>}
 
           {/* Grid info */}
-          <div className="flex flex-wrap items-center gap-6 text-neutral-500 text-sm font-light">
+          <div className="flex flex-wrap items-center gap-6 text-muted-foreground text-sm font-light">
             <div>{sess.images.length} photos in this collection</div>
             <div>Grid: {gridConfig.columns} columns</div>
           </div>
@@ -97,7 +97,7 @@ export default function SessionPage({ params }: SessionPageProps) {
         )}
 
         {/* Grid configuration display for debugging */}
-        <div className="mt-12 p-4 bg-neutral-100 rounded-lg text-sm text-neutral-600">
+        <div className="mt-12 p-4 bg-muted rounded-lg text-sm text-muted-foreground">
           {/* <p>
             <strong>Current Configuration:</strong>
           </p> */}

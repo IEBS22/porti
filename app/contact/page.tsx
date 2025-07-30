@@ -29,15 +29,15 @@ export default function ContactPage() {
   }
 
   return (
-    <div className="min-h-screen bg-neutral-50">
+    <div className="min-h-screen bg-background">
       <div className="container mx-auto px-6 py-12">
         <div className="max-w-4xl mx-auto">
           <div className="grid md:grid-cols-2 gap-12">
             {/* Contact Info */}
             <div className="space-y-8">
               <div>
-                <h1 className="text-3xl md:text-4xl font-light tracking-wide text-neutral-900 mb-6">Get in Touch</h1>
-                <p className="text-neutral-600 font-light leading-relaxed">
+                <h1 className="text-3xl md:text-4xl font-light tracking-wide text-foreground mb-6">Get in Touch</h1>
+                <p className="text-muted-foreground font-light leading-relaxed">
                  I'd love to hear about your project and explore how we can collaborate to create something meaningful together. 
                  Whatever the vision, let's bring it to life
                 </p>
@@ -45,32 +45,32 @@ export default function ContactPage() {
 
               <div className="space-y-4">
                 <div className="flex items-center space-x-3">
-                  <Mail className="w-5 h-5 text-neutral-500" />
-                  <span className="text-neutral-600 font-light">abhilashashewale96@gmail.com</span>
+                  <Mail className="w-5 h-5 text-muted-foreground" />
+                  <span className="text-muted-foreground font-light">abhilashashewale96@gmail.com</span>
                 </div>
                 <div className="flex items-center space-x-3">
-                  <Phone className="w-5 h-5 text-neutral-500" />
-                  <span className="text-neutral-600 font-light">+91 8698130285</span>
+                  <Phone className="w-5 h-5 text-muted-foreground" />
+                  <span className="text-muted-foreground font-light">+91 8698130285</span>
                 </div>
                 <div className="flex items-center space-x-3">
-                  <Instagram className="w-5 h-5 text-neutral-500" />
-                  <span className="text-neutral-600 font-light">@khichik.10</span>
+                  <Instagram className="w-5 h-5 text-muted-foreground" />
+                  <span className="text-muted-foreground font-light">@khichik.10</span>
                 </div>
               </div>
 
               <div className="pt-6">
-                <h3 className="text-lg font-light text-neutral-900 mb-3">Response Time</h3>
-                <p className="text-neutral-600 font-light text-sm">
+                <h3 className="text-lg font-light text-foreground mb-3">Response Time</h3>
+                <p className="text-muted-foreground font-light text-sm">
                   I typically respond to inquiries within 24-48 hours. For urgent requests, please call directly.
                 </p>
               </div>
             </div>
 
             {/* Contact Form */}
-            <div className="bg-white p-8 rounded-sm shadow-sm">
+            <div className="bg-card p-8 rounded-sm shadow-sm border border-border">
               <form onSubmit={handleSubmit} className="space-y-6">
                 <div>
-                  <label htmlFor="name" className="block text-sm font-light text-neutral-700 mb-2">
+                  <label htmlFor="name" className="block text-sm font-light text-foreground mb-2">
                     Name
                   </label>
                   <Input
@@ -80,12 +80,12 @@ export default function ContactPage() {
                     required
                     value={formData.name}
                     onChange={handleChange}
-                    className="w-full border-neutral-200 focus:border-neutral-400 focus:ring-neutral-400"
+                    className="w-full"
                   />
                 </div>
 
                 <div>
-                  <label htmlFor="email" className="block text-sm font-light text-neutral-700 mb-2">
+                  <label htmlFor="email" className="block text-sm font-light text-foreground mb-2">
                     Email
                   </label>
                   <Input
@@ -95,12 +95,12 @@ export default function ContactPage() {
                     required
                     value={formData.email}
                     onChange={handleChange}
-                    className="w-full border-neutral-200 focus:border-neutral-400 focus:ring-neutral-400"
+                    className="w-full"
                   />
                 </div>
 
                 <div>
-                  <label htmlFor="message" className="block text-sm font-light text-neutral-700 mb-2">
+                  <label htmlFor="message" className="block text-sm font-light text-foreground mb-2">
                     Message
                   </label>
                   <Textarea
@@ -110,14 +110,14 @@ export default function ContactPage() {
                     required
                     value={formData.message}
                     onChange={handleChange}
-                    className="w-full border-neutral-200 focus:border-neutral-400 focus:ring-neutral-400 resize-none"
+                    className="w-full resize-none"
                     placeholder="Tell me about your project..."
                   />
                 </div>
 
                 <Button
                   type="submit"
-                  className="w-full bg-neutral-800 hover:bg-neutral-900 text-white font-light tracking-wide py-3"
+                  className="w-full font-light tracking-wide py-3"
                 >
                   Send Message
                 </Button>
