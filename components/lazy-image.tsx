@@ -16,6 +16,9 @@ export function LazyImage({ src, alt, aspectRatio, priority = false, className =
   const [isInView, setIsInView] = useState(false)
   const imgRef = useRef<HTMLDivElement>(null)
 
+  // Add cache-busting timestamp to prevent 304 responses
+  const cacheBustingSrc = src ? `${src}?t=${Date.now()}` : "/images/placeholder-logo.jpg"
+
   useEffect(() => {
     if (priority) {
       setIsInView(true)
@@ -56,7 +59,7 @@ export function LazyImage({ src, alt, aspectRatio, priority = false, className =
         {/* Image */}
         {isInView && (
           <Image
-            src={src || "/images/placeholder-logo.jpg"}
+            src={cacheBustingSrc}
             alt={alt}
             fill
             className={`object-contain group-hover:scale-105 transition-transform duration-500 ${
