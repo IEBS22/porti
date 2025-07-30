@@ -30,12 +30,12 @@ export default function CategoryPage({ params }: CategoryPageProps) {
   const gridClasses = getGridClasses(gridConfig.columns)
 
   return (
-    <div className="min-h-screen bg-neutral-50">
+    <div className="min-h-screen bg-background">
       <div className="container mx-auto px-6 py-12">
         {/* Back to Home */}
         <Link
           href="/"
-          className="inline-flex items-center space-x-2 text-neutral-600 hover:text-neutral-900 mb-8 group"
+          className="inline-flex items-center space-x-2 text-muted-foreground hover:text-foreground mb-8 group"
         >
           <ArrowLeft className="w-4 h-4 group-hover:-translate-x-1 transition-transform" />
           <span className="text-sm font-light">Back to Overview</span>
@@ -43,8 +43,8 @@ export default function CategoryPage({ params }: CategoryPageProps) {
 
         {/* Title & Description */}
         <div className="mb-12">
-          <h1 className="text-3xl md:text-4xl font-light tracking-wide text-neutral-900 mb-4">{cat.title}</h1>
-          {cat.description && <p className="text-neutral-600 font-light max-w-2xl">{cat.description}</p>}
+          <h1 className="text-3xl md:text-4xl font-light tracking-wide text-foreground mb-4">{cat.title}</h1>
+          {cat.description && <p className="text-muted-foreground font-light max-w-2xl">{cat.description}</p>}
         </div>
 
         {/* If sessions exist, show cards; otherwise flat gallery */}
@@ -54,7 +54,7 @@ export default function CategoryPage({ params }: CategoryPageProps) {
               <Link
                 key={s.slug}
                 href={`/${cat.slug}/${s.slug}`}
-                className="group block overflow-hidden rounded-lg shadow hover:shadow-lg transition"
+                className="group block overflow-hidden rounded-lg shadow hover:shadow-lg transition bg-card"
               >
                 <div className="relative w-full aspect-[4/3]">
                   <Image
@@ -65,10 +65,10 @@ export default function CategoryPage({ params }: CategoryPageProps) {
                   />
                 </div>
                 <div className="p-4">
-                  <h2 className="text-xl font-medium text-neutral-900 group-hover:text-neutral-700 transition">
+                  <h2 className="text-xl font-medium text-foreground group-hover:text-foreground transition">
                     {s.title}
                   </h2>
-                  <p className="text-sm text-neutral-500 mt-1">{s.images.length} photos</p>
+                  <p className="text-sm text-muted-foreground mt-1">{s.images.length} photos</p>
                 </div>
               </Link>
             ))}
