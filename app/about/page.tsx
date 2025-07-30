@@ -1,6 +1,9 @@
 import Image from "next/image"
 
 export default function AboutPage() {
+  // Add cache-busting timestamp to prevent 304 responses
+  const cacheBustingSrc = `/images/about/IMG_9118.PNG?t=${Date.now()}`
+
   return (
     <div className="min-h-screen bg-background">
       <div className="container mx-auto px-6 py-12">
@@ -8,7 +11,7 @@ export default function AboutPage() {
           <div className="grid md:grid-cols-2 gap-12 items-start">
             {/* Photo */}
             <div className="relative aspect-[4/5] overflow-hidden rounded-sm shadow-sm">
-              <Image src="/images/about/IMG_9118.PNG" alt="Photographer portrait" fill className="object-cover" />
+              <Image src={cacheBustingSrc} alt="Photographer portrait" fill className="object-cover" />
             </div>
 
             {/* Bio */}

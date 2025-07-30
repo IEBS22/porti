@@ -58,7 +58,7 @@ export default function CategoryPage({ params }: CategoryPageProps) {
               >
                 <div className="relative w-full aspect-[4/3]">
                   <Image
-                    src={s.coverImage || s.images[0]}
+                    src={`${s.coverImage || s.images[0]}?t=${Date.now()}`}
                     alt={s.title}
                     fill
                     className="object-cover group-hover:scale-105 transition-transform duration-500"

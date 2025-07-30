@@ -18,6 +18,9 @@ export function MasonryImage({ src, alt, priority = false, className = "" }: Mas
   const [imageDimensions, setImageDimensions] = useState<{ width: number; height: number } | null>(null)
   const imgRef = useRef<HTMLDivElement>(null)
 
+  // Add cache-busting timestamp to prevent 304 responses
+  const cacheBustingSrc = src ? `${src}?t=${Date.now()}` : "/images/placeholder-logo.jpg"
+
   useEffect(() => {
     if (priority) {
       setIsInView(true)
@@ -71,7 +74,7 @@ export function MasonryImage({ src, alt, priority = false, className = "" }: Mas
           {/* Image */}
           {isInView && (
             <Image
-              src={src || "/images/placeholder-logo.jpg"}
+              src={cacheBustingSrc}
               alt={alt}
               fill
               className={`object-cover group-hover:scale-105 transition-transform duration-500 ${
@@ -99,7 +102,7 @@ export function MasonryImage({ src, alt, priority = false, className = "" }: Mas
       {!imageDimensions && isInView && (
         <div className="relative w-full aspect-[4/3]">
           <Image
-            src={src || "/images/placeholder-logo.jpg"}
+            src={cacheBustingSrc}
             alt={alt}
             fill
             className="object-contain opacity-0"
