@@ -9,7 +9,7 @@ export const categories = [
     {
     title: "Commercial Theater",
     slug: "commercial-theater",
-    description: "Professional theater and commercial photography capturing different productions and events.",
+    description: "",
     coverImage: "/images/commercial theater/Romeo & Juliet/image1.jpg", // Update with actual first image
     images: [], // This will be handled by the special theater sessions page
   },
@@ -19,7 +19,7 @@ export const categories = [
   description: "High-energy live performance photography capturing the essence of music.",
   coverImage: "/images/concert/20180519072445_IMG_3838.jpg", // Cover Image (First)
   images: [
-    "/images/concert/20180519085430_IMG_4251.jpg",
+    "/images/concert/20180519072445_IMG_3838.jpg",
     
     "/images/concert/20180519084414_IMG_4214.jpg",
     "/images/concert/20180519083821_IMG_4160.jpg",
@@ -34,9 +34,9 @@ export const categories = [
     "/images/concert/20180519072445_IMG_3838.jpg",
     "/images/concert/20180519072538_IMG_3851.jpg",
   
-    // "/images/concert/image1.jpg",
-    // "/images/concert/image2.jpg",
-    // "/images/concert/image3.jpg"
+    "/images/concert/image1.jpg",
+    "/images/concert/image2.jpg",
+    "/images/concert/image3.jpg"
 
   ],
 },
@@ -64,7 +64,7 @@ export const categories = [
   },
 
     {
-  title: "Art",
+  title: "Tale Telling",
   slug: "art",
   description: "Creative and Artistic photography exploring visual storytelling.",
   coverImage: "/images/Art/IMG_1403.jpg",
@@ -73,14 +73,15 @@ export const categories = [
     "/images/Art/IMG_1705.jpg",
     
     "/images/Art/IMG_3998.jpg",
-        "/images/Art/WhatsApp Image 2025-05-26 at 10.53.05 PM (2).jpg",
+    "/images/Art/WhatsApp Image 2025-05-26 at 10.52.55 PM.jpg",     
 
     "/images/Art/WhatsApp Image 2025-05-26 at 10.29.48 PM.jpg",
     "/images/Art/WhatsApp Image 2025-05-26 at 10.52.53 PM.jpg",
     "/images/Art/WhatsApp Image 2025-05-26 at 10.52.54 PM (1).jpg",
     "/images/Art/WhatsApp Image 2025-05-26 at 10.52.54 PM.jpg",
     "/images/Art/WhatsApp Image 2025-05-26 at 10.52.55 PM (1).jpg",
-    "/images/Art/WhatsApp Image 2025-05-26 at 10.52.55 PM.jpg",
+    "/images/Art/WhatsApp Image 2025-05-26 at 10.53.05 PM (2).jpg",
+   
     "/images/Art/WhatsApp Image 2025-05-26 at 10.52.56 PM (1).jpg",
     "/images/Art/WhatsApp Image 2025-05-26 at 10.52.57 PM (2).jpg",
      "/images/Art/WhatsApp Image 2025-05-26 at 10.52.56 PM.jpg",
@@ -90,10 +91,11 @@ export const categories = [
         "/images/Art/IMG_4106.jpg",
 
     "/images/Art/WhatsApp Image 2025-05-26 at 10.53.06 PM (1).jpg",
-    "/images/Art/WhatsApp Image 2025-05-26 at 10.53.06 PM.jpg",
+    "/images/Art/WhatsApp Image 2025-05-26 at 10.53.02 PM (1).jpg",
+    
     "/images/Art/WhatsApp Image 2025-05-26 at 10.53.07 PM (1).jpg",
     "/images/Art/IMG_1849.jpg",
-    "/images/Art/WhatsApp Image 2025-05-26 at 10.53.02 PM (1).jpg",
+    "/images/Art/WhatsApp Image 2025-05-26 at 10.53.06 PM.jpg",
 
   ],
 },

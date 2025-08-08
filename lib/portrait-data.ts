@@ -41,7 +41,7 @@ export const portraitSessions = [
       {
     title: "Unscripted / अकतीथ ",
     slug: "ranga",
-    description: "Portrait session with Ranga.",
+    description: "Portrait session with Sriranga.",
     coverImage: "/images/Potraits/Ranga/IMG_2025 (1).jpg",
     folderPath: "Ranga",
     images: [
@@ -66,13 +66,15 @@ export const portraitSessions = [
     ],
   },
   {
-    title: "Stiullness / ठहर ",
+    title: "Stillness / ठहर ",
     slug: "shaila",
     description: "Portrait session with Shaila.",
-    coverImage: "/images/Potraits/Shaila/_MG_0406.jpg",
+    coverImage: "/images/Potraits/Shaila/IMG_0339.jpg",
     folderPath: "Shaila",
     images: [
-      "/images/Potraits/Shaila/_MG_0406.jpg",
+      "/images/Potraits/Shaila/IMG_0339.jpg",
+
+      "/images/Potraits/Shaila/IMG0338.jpg",
       "/images/Potraits/Shaila/_MG_0485.jpg",
       "/images/Potraits/Shaila/_MG_6748.jpg",
       "/images/Potraits/Shaila/Cover photo.jpg",
@@ -86,12 +88,17 @@ export const portraitSessions = [
     coverImage: "/images/Potraits/Vaibhav/_MG_7926.jpg",
     folderPath: "Vaibhav",
     images: [
-      "/images/Potraits/Vaibhav/_MG_7926.jpg",
-      "/images/Potraits/Vaibhav/Cover photo.jpg",
+
+      "/images/Potraits/Vaibhav/IMG_0333.jpg",
+      "/images/Potraits/Vaibhav/IMG_0335 (1).jpg",
+      "/images/Potraits/Vaibhav/IMG_0334.jpg",
+      "/images/Potraits/Vaibhav/IMG_0336.jpg",
+      // "/images/Potraits/Vaibhav/_MG_7926.jpg",
+      // "/images/Potraits/Vaibhav/Cover photo.jpg",
     ],
   },
       {
-    title: "Gaze / अलोकिक",
+    title: "Gaze / अलौकिक.",
     slug: "abhishek-classic",
     description: "Classic portrait session with timeless styling and composition.",
     coverImage: "/images/Potraits/Abhishek old/Cover photo.jpg",

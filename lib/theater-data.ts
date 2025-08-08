@@ -33,18 +33,19 @@ export const theaterSessions = [
     // production: "Musical Theater",
     images: [
       "/images/Commercial theater/Something like truth/IMG_9106.jpg",
-      "/images/Commercial theater/Something like truth/IMG_9108.jpg",
+      
       "/images/Commercial theater/Something like truth/IMG_9107.jpg",
       
       "/images/Commercial theater/Something like truth/IMG_9109.jpg",
+      "/images/Commercial theater/Something like truth/IMG_9108.jpg",
       "/images/Commercial theater/Something like truth/IMG_9110.jpg"
       // Add all images from this production folder
     ],
   },
 
     {
-    title: "Amar Photo Studio Suggestion",
-    slug: "amar_photo_studio_Suggestion",
+    title: "Amar Photo Studio",
+    slug: "amar_photo_studio",
     // description: "Contemporary dance performance showcasing fluid movements and artistic expression.",
     coverImage: "/images/Commercial theater/Amar photo studio suggestion/_MG_2200.jpg", // Update with your actual first image
     folderPath: "Amar photo studio suggestion",
@@ -149,8 +150,8 @@ export const theaterSessions = [
  
 
     {
-    title: "Bombay",
-    slug: "bombay",
+    title: "Bombai",
+    slug: "bombai",
     // description: "Contemporary dance performance showcasing fluid movements and artistic expression.",
     coverImage: "/images/Commercial theater/Bombay/IMG_7660.jpg", // Update with your actual first image
     folderPath: "Bombay",

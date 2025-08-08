@@ -97,7 +97,7 @@ export default function SessionPage({ params }: SessionPageProps) {
         )}
 
         {/* Grid configuration display for debugging */}
-        <div className="mt-12 p-4 bg-muted rounded-lg text-sm text-muted-foreground">
+        <div className="">
           {/* <p>
             <strong>Current Configuration:</strong>
           </p> */}
