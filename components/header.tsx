@@ -4,7 +4,6 @@ import Link from "next/link"
 import { usePathname } from "next/navigation"
 import { Instagram, Menu, X } from "lucide-react"
 import { useState } from "react"
-import { ThemeToggle } from "@/components/theme-toggle"
 
 const navigation = [
   { name: "Overview", href: "/" },
@@ -42,7 +41,7 @@ export function Header() {
             </h1>
           </Link>
 
-          {/* Social Links and Theme Toggle */}
+          {/* Social Links */}
           <div className="hidden md:flex items-center space-x-4">
             <Link
               href="https://instagram.com/khichik.10"
@@ -53,12 +52,10 @@ export function Header() {
               <Instagram className="w-5 h-5" />
               <span className="sr-only">Instagram</span>
             </Link>
-            <ThemeToggle />
           </div>
 
-          {/* Mobile menu button and theme toggle */}
+          {/* Mobile menu button */}
           <div className="md:hidden flex items-center space-x-2">
-            <ThemeToggle />
             <button
               className="text-muted-foreground hover:text-foreground"
               onClick={() => setMobileMenuOpen(!mobileMenuOpen)}

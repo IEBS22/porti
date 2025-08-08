@@ -51,7 +51,7 @@ export function LazyImage({ src, alt, aspectRatio, priority = false, className =
       <div className={`relative w-full ${aspectRatio}`}>
         {/* Skeleton loader */}
         {!isLoaded && (
-          <div className="absolute inset-0 bg-gradient-to-r from-neutral-200 via-neutral-300 to-neutral-200 animate-pulse" />
+          <div className="absolute inset-0 bg-gradient-to-r from-neutral-800 via-neutral-700 to-neutral-800 animate-pulse" />
         )}
 
         {/* Image */}
@@ -70,7 +70,7 @@ export function LazyImage({ src, alt, aspectRatio, priority = false, className =
         )}
 
         {/* Background for images that don't fill the container */}
-        <div className="absolute inset-0 bg-neutral-100 -z-10" />
+        <div className="absolute inset-0 bg-neutral-900 -z-10" />
 
         {/* Hover overlay */}
         <div className="absolute inset-0 bg-black/0 group-hover:bg-black/10 transition-colors duration-300" />
@@ -78,7 +78,7 @@ export function LazyImage({ src, alt, aspectRatio, priority = false, className =
         {/* Loading indicator */}
         {isInView && !isLoaded && (
           <div className="absolute inset-0 flex items-center justify-center">
-            <div className="w-8 h-8 border-2 border-neutral-300 border-t-neutral-600 rounded-full animate-spin" />
+            <div className="w-8 h-8 border-2 border-neutral-700 border-t-neutral-400 rounded-full animate-spin" />
           </div>
         )}
       </div>
