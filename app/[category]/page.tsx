@@ -8,6 +8,7 @@ import { theaterSessions } from "../../lib/theater-data"
 import { portraitSessions } from "../../lib/portrait-data"
 import { getGridConfig, getGridClasses } from "../../lib/grid-config"
 import { LazyImage } from "../../components/lazy-image"
+import { addCacheBuster } from "../../lib/image-utils"
 
 interface CategoryPageProps {
   params: { category: string }
@@ -58,7 +59,7 @@ export default function CategoryPage({ params }: CategoryPageProps) {
               >
                 <div className="relative w-full aspect-[4/3]">
                   <Image
-                    src={s.coverImage || s.images[0]}
+                    src={addCacheBuster(s.coverImage || s.images[0])}
                     alt={s.title}
                     fill
                     className="object-cover group-hover:scale-105 transition-transform duration-500"
