@@ -56,12 +56,12 @@ export default function CategoryPage({ params }: CategoryPageProps) {
                 href={`/${cat.slug}/${s.slug}`}
                 className="group block overflow-hidden rounded-lg shadow hover:shadow-lg transition bg-card"
               >
-                <div className="relative w-full aspect-[4/3]">
+                <div className="relative w-full aspect-[4/3] bg-neutral-100">
                   <Image
                     src={s.coverImage || s.images[0]}
                     alt={s.title}
                     fill
-                    className="object-cover group-hover:scale-105 transition-transform duration-500"
+                    className="object-contain"
                   />
                 </div>
                 <div className="p-4">
