@@ -66,7 +66,7 @@ export function MasonryImage({ src, alt, priority = false, className = "" }: Mas
         >
           {/* Skeleton loader */}
           {!isLoaded && (
-            <div className="absolute inset-0 bg-gradient-to-r from-neutral-200 via-neutral-300 to-neutral-200 animate-pulse" />
+            <div className="absolute inset-0 bg-gradient-to-r from-neutral-800 via-neutral-700 to-neutral-800 animate-pulse" />
           )}
 
           {/* Image */}
@@ -90,7 +90,7 @@ export function MasonryImage({ src, alt, priority = false, className = "" }: Mas
           {/* Loading indicator */}
           {isInView && !isLoaded && (
             <div className="absolute inset-0 flex items-center justify-center">
-              <div className="w-8 h-8 border-2 border-neutral-300 border-t-neutral-600 rounded-full animate-spin" />
+              <div className="w-8 h-8 border-2 border-neutral-700 border-t-neutral-400 rounded-full animate-spin" />
             </div>
           )}
         </div>
@@ -107,7 +107,7 @@ export function MasonryImage({ src, alt, priority = false, className = "" }: Mas
             loading={priority ? "eager" : "lazy"}
             onLoad={handleImageLoad}
           />
-          <div className="absolute inset-0 bg-gradient-to-r from-neutral-200 via-neutral-300 to-neutral-200 animate-pulse" />
+          <div className="absolute inset-0 bg-gradient-to-r from-neutral-800 via-neutral-700 to-neutral-800 animate-pulse" />
         </div>
       )}
     </div>

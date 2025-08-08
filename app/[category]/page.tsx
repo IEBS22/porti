@@ -57,7 +57,7 @@ export default function CategoryPage({ params }: CategoryPageProps) {
                 href={`/${cat.slug}/${s.slug}`}
                 className="group block overflow-hidden rounded-lg shadow hover:shadow-lg transition bg-card"
               >
-                <div className="relative w-full aspect-[4/3] bg-neutral-100">
+                <div className="relative w-full aspect-[4/3] bg-neutral-900">
                   <Image
                     src={addCacheBuster(s.coverImage || s.images[0])}
                     alt={s.title}
