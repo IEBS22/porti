@@ -59,12 +59,6 @@ export default function SessionPage({ params }: SessionPageProps) {
         <div className="mb-12">
           <h1 className="text-3xl md:text-4xl font-light text-foreground mb-4">{sess.title}</h1>
           {sess.description && <p className="text-muted-foreground font-light max-w-2xl mb-4">{sess.description}</p>}
-
-          {/* Grid info */}
-          <div className="flex flex-wrap items-center gap-6 text-muted-foreground text-sm font-light">
-            <div>{sess.images.length} photos in this collection</div>
-            <div>Grid: {gridConfig.columns} columns</div>
-          </div>
         </div>
 
         {/* Dynamic Images Grid */}
