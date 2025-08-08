@@ -12,6 +12,17 @@ interface LazyImageProps {
   className?: string
 }
 
+function getAspectRatioValue(aspectRatio: string): string {
+  const ratioMap: { [key: string]: string } = {
+    "aspect-square": "1",
+    "aspect-[3/2]": "3/2", 
+    "aspect-[4/3]": "4/3",
+    "aspect-[16/9]": "16/9",
+    "aspect-video": "16/9"
+  }
+  return ratioMap[aspectRatio] || "4/3"
+}
+
 export function LazyImage({ src, alt, aspectRatio, priority = false, className = "" }: LazyImageProps) {
   const [isLoaded, setIsLoaded] = useState(false)
   const [isInView, setIsInView] = useState(false)
@@ -48,7 +59,7 @@ export function LazyImage({ src, alt, aspectRatio, priority = false, className =
       ref={imgRef}
       className={`group relative overflow-hidden rounded-sm shadow-sm hover:shadow-md transition-all duration-300 ${className}`}
     >
-      <div className={`relative w-full ${aspectRatio}`}>
+      <div className="relative w-full" style={{ aspectRatio: getAspectRatioValue(aspectRatio) }}>
         {/* Skeleton loader */}
         {!isLoaded && (
           <div className="absolute inset-0 bg-gradient-to-r from-neutral-800 via-neutral-700 to-neutral-800 animate-pulse" />

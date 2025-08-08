@@ -18,16 +18,17 @@ export function generateStaticParams() {
   return categories.map((cat) => ({ category: cat.slug }))
 }
 
-export default function CategoryPage({ params }: CategoryPageProps) {
-  const cat = categories.find((c) => c.slug === params.category)
+export default async function CategoryPage({ params }: CategoryPageProps) {
+  const { category } = await params
+  const cat = categories.find((c) => c.slug === category)
   if (!cat) return notFound()
 
   // Decide if this category has sessions or is a flat gallery
   const sessions =
-    params.category === "commercial-theater" ? theaterSessions : params.category === "portraits" ? portraitSessions : []
+    category === "commercial-theater" ? theaterSessions : category === "portraits" ? portraitSessions : []
 
   // Get grid configuration for this category
-  const gridConfig = getGridConfig(params.category)
+  const gridConfig = getGridConfig(category)
   const gridClasses = getGridClasses(gridConfig.columns)
 
   return (
