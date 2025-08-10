@@ -42,7 +42,7 @@ export function Header() {
           </Link>
 
           {/* Social Links */}
-          <div className="hidden md:flex items-center space-x-4">
+          {/* <div className="hidden md:flex items-center space-x-4">
             <Link
               href="https://instagram.com/khichik.10"
               target="khichik.10"
@@ -52,7 +52,7 @@ export function Header() {
               <Instagram className="w-5 h-5" />
               <span className="sr-only">Instagram</span>
             </Link>
-          </div>
+          </div> */}
 
           {/* Mobile menu button */}
           <div className="md:hidden flex items-center space-x-2">
