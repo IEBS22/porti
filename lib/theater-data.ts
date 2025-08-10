@@ -9,15 +9,16 @@ export const theaterSessions = [
     // date: "January 2024",
     // production: "Corporate Photography",
     images: [
-      "/images/Commercial theater/The light catcher/IMG_8484.jpg",
-       "/images/Commercial theater/The light catcher/IMG_8680.jpg",
-        
-      "/images/Commercial theater/The light catcher/Cover photo.jpg",
+       "/images/Commercial theater/The light catcher/Cover photo.jpg",
     
        "/images/Commercial theater/The light catcher/IMG_8533.jpg",
+        
+     
+       "/images/Commercial theater/The light catcher/IMG_8484.jpg",
+       "/images/Commercial theater/The light catcher/IMG_8680.jpg",
        "/images/Commercial theater/The light catcher/IMG_8612.jpg",
        "/images/Commercial theater/The light catcher/IMG_8629.jpg",
-       "/images/Commercial theater/The light catcher/IMG_8706.jpg",
+      //  "/images/Commercial theater/The light catcher/IMG_8706.jpg",
 
       // Add all images from this event folder
     ],
