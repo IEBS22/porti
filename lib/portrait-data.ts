@@ -2,7 +2,7 @@ export const portraitSessions = [
   {
     title: "Notion / खयाल",
     slug: "abhishek_expression",
-    description: "Expressive portrait session capturing dynamic emotions and personality.",
+    description: "",
     coverImage: "/images/Potraits/Abhishek_expression/_MG_9737.jpg",
     folderPath: "Potraits/Abhishek_expression",
     images: [
@@ -28,7 +28,7 @@ export const portraitSessions = [
   {
     title: "Glam / आभा ",
     slug: "model-session",
-    description: "Professional model photography showcasing versatility and style.",
+    description: "",
     coverImage: "/images/Potraits/Model/Cover photo.jpg",
     folderPath: "Model",
     images: [
@@ -41,7 +41,7 @@ export const portraitSessions = [
       {
     title: "Unscripted / अकतीथ ",
     slug: "ranga",
-    description: "Portrait session with Sriranga.",
+    description: "",
     coverImage: "/images/Potraits/Ranga/IMG_2025 (1).jpg",
     folderPath: "Ranga",
     images: [
@@ -54,7 +54,7 @@ export const portraitSessions = [
   {
     title: "Raw and Real",
     slug: "rahul-kulkarni",
-    description: "Portrait session with Rahul Kulkarni.",
+    description: "",
     coverImage: "/images/Potraits/Rahul Kulkarni/Cover photo (1).jpg",
     folderPath: "Rahul Kulkarni",
     images: [
@@ -68,7 +68,7 @@ export const portraitSessions = [
   {
     title: "Stillness / ठहर ",
     slug: "shaila",
-    description: "Portrait session with Shaila.",
+    description: "",
     coverImage: "/images/Potraits/Shaila/IMG_0339.jpg",
     folderPath: "Shaila",
     images: [
@@ -84,7 +84,7 @@ export const portraitSessions = [
   {
     title: "Ease / स्वाभाविकता",
     slug: "vaibhav",
-    description: "Portrait session with Vaibhav.",
+    description: "",
     coverImage: "/images/Potraits/Vaibhav/_MG_7926.jpg",
     folderPath: "Vaibhav",
     images: [
@@ -100,7 +100,7 @@ export const portraitSessions = [
       {
     title: "Gaze / अलौकिक.",
     slug: "abhishek-classic",
-    description: "Classic portrait session with timeless styling and composition.",
+    description: "",
     coverImage: "/images/Potraits/Abhishek old/Cover photo.jpg",
     folderPath: "Abhishek old",
     images: [
