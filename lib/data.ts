@@ -19,7 +19,7 @@ export const categories = [
   description: "High-energy live performance photography capturing the essence of music.",
   coverImage: "/images/concert/20180519072445_IMG_3838.jpg", // Cover Image (First)
   images: [
-    "/images/concert/20180519072445_IMG_3838.jpg",
+    // "/images/concert/20180519072445_IMG_3838.jpg",
     
     "/images/concert/20180519084414_IMG_4214.jpg",
     "/images/concert/20180519083821_IMG_4160.jpg",
@@ -55,10 +55,13 @@ export const categories = [
       "/images/Automobile/2G8A0099.jpg",
 
       "/images/Automobile/2G8A0011.jpg",
-      "/images/Automobile/2G8A0048.jpg",
       "/images/Automobile/2G8A0029 (1).jpg",
+
       "/images/Automobile/2G8A0021 (1).jpg",
       "/images/Automobile/2G8A0050 (1).jpg",
+
+      "/images/Automobile/2G8A0048.jpg",
+
 
     ],
   },
