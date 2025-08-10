@@ -69,15 +69,15 @@ export const portraitSessions = [
     title: "Stillness / ठहर ",
     slug: "shaila",
     description: "",
-    coverImage: "/images/Potraits/Shaila/IMG_0339.jpg",
+    coverImage: "/images/Potraits/Shaila/img_0339.jpg",
     folderPath: "Shaila",
     images: [
-      "/images/Potraits/Shaila/IMG_0339.jpg",
+      "/images/Potraits/Shaila/img_0339.jpg",
 
-      "/images/Potraits/Shaila/IMG0338.jpg",
+      "/images/Potraits/Shaila/img_0338.jpg",
       "/images/Potraits/Shaila/_MG_0485.jpg",
       "/images/Potraits/Shaila/_MG_6748.jpg",
-      "/images/Potraits/Shaila/Cover photo.jpg",
+      "/images/Potraits/Shaila/cover photo.jpg",
     ],
   },
 
@@ -89,10 +89,10 @@ export const portraitSessions = [
     folderPath: "Vaibhav",
     images: [
 
-      "/images/Potraits/Vaibhav/IMG_0333.jpg",
-      "/images/Potraits/Vaibhav/IMG_0335 (1).jpg",
-      "/images/Potraits/Vaibhav/IMG_0334.jpg",
-      "/images/Potraits/Vaibhav/IMG_0336.jpg",
+      "/images/Potraits/Vaibhav/img_0333.jpg",
+      "/images/Potraits/Vaibhav/img_0335 (1).jpg",
+      "/images/Potraits/Vaibhav/img_0334.jpg",
+      "/images/Potraits/Vaibhav/img_0336.jpg",
       // "/images/Potraits/Vaibhav/_MG_7926.jpg",
       // "/images/Potraits/Vaibhav/Cover photo.jpg",
     ],
