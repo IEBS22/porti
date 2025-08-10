@@ -75,9 +75,9 @@ export const portraitSessions = [
       "/images/Potraits/Shaila/img_0339.jpg",
 
       "/images/Potraits/Shaila/img_0338.jpg",
-      "/images/Potraits/Shaila/_MG_0485.jpg",
+      // "/images/Potraits/Shaila/_MG_0485.jpg",
       "/images/Potraits/Shaila/_MG_6748.jpg",
-      "/images/Potraits/Shaila/cover photo.jpg",
+      "images/Potraits/Shaila/cover photo.jpg",
     ],
   },
 
