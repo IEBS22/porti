@@ -98,7 +98,7 @@ export const portraitSessions = [
     ],
   },
       {
-    title: "Gaze / अलौकिक.",
+    title: "Gaze / अलौकिक",
     slug: "abhishek-classic",
     description: "",
     coverImage: "/images/Potraits/Abhishek old/Cover photo.jpg",

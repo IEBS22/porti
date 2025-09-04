@@ -152,7 +152,7 @@ export const theaterSessions = [
  
 
     {
-    title: "Bombai",
+    title: "Bambai",
     slug: "bombai",
     // description: "Contemporary dance performance showcasing fluid movements and artistic expression.",
     coverImage: "/images/Commercial theater/Bombay/IMG_7660.jpg", // Update with your actual first image
